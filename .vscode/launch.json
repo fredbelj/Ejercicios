@@ -1,0 +1,66 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        
+    {
+        "name": "Launch via NPM",
+        "request": "launch",
+        "runtimeArgs": [
+            "run-script",
+            "debug"
+        ],
+        "runtimeExecutable": "npm",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        "type": "pwa-node"
+    },
+        {
+            "name": "Attach by Process ID",
+            "processId": "${command:PickProcess}",
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "name": "nodemon",
+            "program": "${workspaceFolder}/app.js",
+            "request": "launch",
+            "restart": true,
+            "runtimeExecutable": "nodemon",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "type": "java",
+            "name": "Launch IngresoDatos",
+            "request": "launch",
+            "mainClass": "IngresoDatos",
+            "projectName": "Python_483cc48e"
+        },
+        {
+            "name": "JavaScrip: Current File",
+            "type": "javasript",
+            "request": "launch",
+            "program": "D:\\Freddy\\Capacitacion\\Desarrollo_web\\master_class\\backend\\index.js",
+            "console": "integratedTerminal"
+        }
+    ]
+}
